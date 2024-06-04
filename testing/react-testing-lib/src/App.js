@@ -34,11 +34,19 @@ export default App;
 
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import routesConfig from './routesConfig';
+import { Provider } from 'react-redux';
+import { createReduxStore } from './store/store';
 
 const router = createBrowserRouter(routesConfig);
 
 const App = () => {
-  return <RouterProvider router={router} />;
+  return (
+    <div id='rootElement'>
+      <Provider store={createReduxStore()}>
+        <RouterProvider router={router} />
+      </Provider>
+    </div>
+  );
 };
 
 export default App;

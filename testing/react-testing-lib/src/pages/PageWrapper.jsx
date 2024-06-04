@@ -3,10 +3,10 @@ import Navbar from '../components/Navbar/Navbar';
 
 const PageWrapper = () => {
   return (
-    <>
+    <div>
       <Navbar />
       <Outlet />
-    </>
+    </div>
   );
 };
 

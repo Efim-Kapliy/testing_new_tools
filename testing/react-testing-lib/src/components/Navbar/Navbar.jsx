@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <>
+    <div>
       <Link to='/' data-testid='main-link'>
         main
       </Link>
@@ -12,7 +12,7 @@ const Navbar = () => {
       <Link to='/users' data-testid='users-link'>
         users
       </Link>
-    </>
+    </div>
   );
 };
 
